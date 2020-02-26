@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="../Web Visualizations/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 </html>
 
@@ -78,20 +78,25 @@
       <div class="row background">
         <div class="col-md-8 card-padding-1">
           <div class="card">
-            <h5><b>Wind Speed</b></h5>
+            <h5><b>Summary: Latitude vs. X</b></h5>
             <hr />
             <img
-              class="card-img-top"
-              src="..\Resources\assets\images\Fig4.png"
-              alt="Wind speed"
+              class="card-img-summary"
+              src="..\Resources\assets\images\Fig1.png"
+              alt="Max Temperature" 
             />
             <div class="card-body">
               <p class="card-text">
-                Wind speed data is widely spread across the latitude.
+                The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                <br>
+                After assembling this dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
               </p>
             </div>
           </div>
-        </div><div class="col-md-4 card-padding-2">
+        </div>
+        <div class="col-md-4 card-padding-2">
           <div class="card">
             <h4><b>Visualizations</b></h4>
             <hr />

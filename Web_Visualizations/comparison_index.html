@@ -27,11 +27,10 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-</html>
 
-<body class= "background">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
-      <a class="navbar-brand latitude heading_text" href="#"><b>Latitude</b></a>
+      <a class="navbar-brand latitude heading_text" href="landing_index.html"><b>Latitude</b></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,9 +40,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse nav-left" id="navbarNavDropdown">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a
@@ -58,25 +57,26 @@
              <div
                class="dropdown-menu"
                aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Max Temperature</a>
-               <a class="dropdown-item" href="#">Humidity</a>
-               <a class="dropdown-item" href="#">Cloudiness</a>
-               <a class="dropdown-item" href="#">Wind Speed</a>
+               <a class="dropdown-item" href="..\Visualizations\max_temp.html">Max Temperature</a>
+               <a class="dropdown-item" href="..\Visualizations\humidity.html">Humidity</a>
+               <a class="dropdown-item" href="..\Visualizations\cloudiness.html">Cloudiness</a>
+               <a class="dropdown-item" href="..\Visualizations\windspeed.html">Wind Speed</a>
              </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="comparison_index.html"
               >Comparison <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="data_index.html">Data</a>
           </li>
         </ul>
       </nav>
-      <div class="container">
-      <div class="col-md-12">
-        <div class="card comparison-card">
+
+      <div class="row background">
+      <div class="col-md-12 card-padding-1">
+        <div class="card ">
           <h5><b>Comparison: Latitude vs X</b></h5>
           <hr />
           <div class="card-body">
@@ -120,5 +120,9 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
+  </body>
+
+  <footer>
+    © Copyright Coding Bootcamp 2017
+  </footer>
+</html>
