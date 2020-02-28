@@ -27,8 +27,9 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+</html>
 
-  <body>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
       <a class="navbar-brand latitude heading_text" href="landing_index.html"><b>Latitude</b></a>
       <button
@@ -57,10 +58,10 @@
              <div
                class="dropdown-menu"
                aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="..\Visualizations\max_temp.html">Max Temperature</a>
-               <a class="dropdown-item" href="..\Visualizations\humidity.html">Humidity</a>
-               <a class="dropdown-item" href="..\Visualizations\cloudiness.html">Cloudiness</a>
-               <a class="dropdown-item" href="..\Visualizations\windspeed.html">Wind Speed</a>
+               <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+               <a class="dropdown-item" href="humidity.html">Humidity</a>
+               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+               <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
              </div>
           </li>
           <li class="nav-item active">
@@ -75,46 +76,65 @@
       </nav>
 
       <div class="row background">
-      <div class="col-md-12 card-padding-1">
-        <div class="card ">
-          <h5><b>Comparison: Latitude vs X</b></h5>
-          <hr />
-          <div class="card-body">
-            <p class="card-text">
-              Click any plot to get an in-depth analysis
-            </p>
-          </div>    
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                class="card-img-top"
-                src="..\Resources\assets\images\Fig1.png"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="col-md-6">
-              <img
-                class="card-img-top"
-                src="..\Resources\assets\images\Fig2.png"
-                alt="Card image cap"
-              />
+        <div class="col-md-8 card-padding-1">
+          <div class="card">
+            <h5><b>Cloudiness</b></h5>
+            <hr />
+            <img
+              class="card-img-top"
+              src="..\Resources\assets\images\Fig3.png"
+              alt="Cloudiness"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Cloudiness data is widely spread across the latitude and there is no colearation between cloudiness and latitude.
+              </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                class="card-img-top"
-                src="..\Resources\assets\images\Fig3.png"
-                alt="Card image cap"
-              />
+        </div><div class="col-md-4 card-padding-2">
+          <div class="card">
+            <h4><b>Visualizations</b></h4>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <a href="max_temp.html">
+                  <img
+                  class="card-img-visualization"
+                  src="..\Resources\assets\images\Fig1.png"
+                  alt="Max Temperature"
+                  />
+                </a>  
+              </div>
+              <div class="col-md-6">
+                <a href="humidity.html">
+                 <img
+                   class="card-img-visualization"
+                   src="..\Resources\assets\images\Fig2.png"
+                   alt="Humidity"
+                 />
+                </a>
+              </div>
             </div>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="cloudiness.html">
+                  <img
+                    class="card-img-visualization"
+                    src="..\Resources\assets\images\Fig3.png"
+                    alt="Cloudiness"
+                  />
+                 </a>
+              </div>
 
-            <div class="col-md-6">
-              <img
-                class="card-img-top"
-                src="..\Resources\assets\images\Fig4.png"
-                alt="Card image cap"
-              />
+              <div class="col-md-6">
+                <a href="windspeed.html">
+                  <img
+                    class="card-img-visualization"
+                    src="..\Resources\assets\images\Fig4.png"
+                    alt="Wind Speed"
+                  />
+                 </a>
+              </div>
             </div>
           </div>
         </div>
@@ -123,6 +143,6 @@
   </body>
 
   <footer>
-    © Copyright Coding Bootcamp 2017
+    © Copyright Kana Moore
   </footer>
 </html>

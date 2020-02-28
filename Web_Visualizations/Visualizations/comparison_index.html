@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bootstrap Visualization Dataset</title>
+
+    <!-- import js and css style sheet  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,10 +31,9 @@
   </head>
 
   <body>
+    <!-- Create navbar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
-      <a class="navbar-brand latitude heading_text" href="landing_index.html"
-        ><b>Latitude</b></a
-      >
+      <a class="navbar-brand latitude heading_text" href="landing_index.html"><b>Latitude</b></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -44,7 +45,6 @@
       >
         <span class="navbar-toggler-icon "></span>
       </button>
-
       <div class="collapse navbar-collapse nav-left" id="navbarNavDropdown">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item dropdown">
@@ -54,24 +54,17 @@
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               Plots
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="..\Visualizations\max_temp.html"
-                >Max Temperature</a
-              >
-              <a class="dropdown-item" href="..\Visualizations\humidity.html"
-                >Humidity</a
-              >
-              <a class="dropdown-item" href="..\Visualizations\cloudiness.html"
-                >Cloudiness</a
-              >
-              <a class="dropdown-item" href="..\Visualizations\windspeed.html"
-                >Wind Speed</a
-              >
-            </div>
+             <div
+               class="dropdown-menu"
+               aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+               <a class="dropdown-item" href="humidity.html">Humidity</a>
+               <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+               <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+             </div>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="comparison_index.html"
@@ -82,25 +75,51 @@
             <a class="nav-link" href="data_index.html">Data</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <!-- End of navbar  -->
 
-    <div class="row background">
-      <div class="col-md-8 card-padding-1">
-        <div class="card" style="width: 50rem;">
-          <div class="card-header">
-            <h5><b>Data</b></h5>
-            <hr />
-            <div class="card-body">
-              <p class="card-text">
-                The following table includes all of the data used for plotting
-                during this project.
-              </p>
+      <!-- Create card to hold images -->
+      <div class="row background">
+      <div class="col-md-12 card-padding-1">
+        <div class="card ">
+          <h5><b>Comparison: Latitude vs X</b></h5>
+          <hr />
+          <div class="card-body">
+            <p class="card-text">
+              Click any plot to get an in-depth analysis
+            </p>
+          </div>    
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="card-img-top"
+                src="..\Resources\assets\images\Fig1.png"
+                alt="Card image cap"
+              />
             </div>
-            <div class="table-responsive">
-              <table class="table">
-                <a href="html_table.py"></a>
-              </table>
+            <div class="col-md-6">
+              <img
+                class="card-img-top"
+                src="..\Resources\assets\images\Fig2.png"
+                alt="Card image cap"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="card-img-top"
+                src="..\Resources\assets\images\Fig3.png"
+                alt="Card image cap"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <img
+                class="card-img-top"
+                src="..\Resources\assets\images\Fig4.png"
+                alt="Card image cap"
+              />
             </div>
           </div>
         </div>
@@ -109,6 +128,6 @@
   </body>
 
   <footer>
-    © Copyright Coding Bootcamp 2017
+    © Copyright Kana Moore
   </footer>
 </html>
