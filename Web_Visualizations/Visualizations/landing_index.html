@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+  <!-- import js and css style sheet  -->
   <head>
     <meta charset="UTF-8" />
     <title>Bootstrap Visualization Dataset</title>
@@ -27,9 +29,10 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-</html>
 
-<body>
+
+<!-- Create navbar  -->
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
       <a class="navbar-brand latitude heading_text" href="landing_index.html"><b>Latitude</b></a>
       <button
@@ -73,38 +76,40 @@
             <a class="nav-link" href="data_index.html">Data</a>
           </li>
         </ul>
-      </nav>
-
+    </nav>
+      <!-- End of navbar  -->
+  
+      <!-- Create card for summary of this project  -->
       <div class="row background">
-        <div class="col-md-8 card-padding-1">
+        <div class="col-lg-6 col-md-9 card-padding">
           <div class="card">
             <div class="card-body">
              <h5><b>Summary: Latitude vs. X</b></h5>
              <hr />
-             <span>
+             
              <img
               class="card-img-summary"
               src="..\Resources\assets\images\Fig1.png"
               alt="Max Temperature" 
              />
+             <span>
+             <p>
               The purpose of this project was to analyze how weather changes as you get closer to the equator.
               To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+             </p>  
+             <p> 
               After assembling this dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
               Factors we looked at included: temperature, cloudiness, wind speed, and humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
-             </span>
-
-             <!-- <div class="card-body">
-              <span class="card-text">
-              <span>
-                The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                After assembling this dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
-              </span> -->
+             </p>
+            </span>
             </div>
           </div>
         </div>
-        <div class="col-md-4 card-padding-2">
+        <!-- End of summary project  -->
+       
+
+        <!-- Create card to hold vizualization images -->
+        <div class="col-lg-5 col-md-3 card-padding">
           <div class="card">
             <h4><b>Visualizations</b></h4>
             <hr />
@@ -112,7 +117,7 @@
               <div class="col-sm-3 col-md-6">
                 <a href="max_temp.html">
                   <img
-                  class="card-img-visualization"
+                  class="img-fluid"
                   src="..\Resources\assets\images\Fig1.png"
                   alt="Max Temperature"
                   />
@@ -121,18 +126,16 @@
               <div class="col-sm-3 col-md-6">
                 <a href="humidity.html">
                  <img
-                   class="card-img-visualization"
+                   class="img-fluid"
                    src="..\Resources\assets\images\Fig2.png"
                    alt="Humidity"
                  />
                 </a>
               </div>
-            </div>
-            <div class="row">
               <div class="col-sm-3 col-md-6">
                 <a href="cloudiness.html">
                   <img
-                    class="card-img-visualization"
+                    class="img-fluid"
                     src="..\Resources\assets\images\Fig3.png"
                     alt="Cloudiness"
                   />
@@ -142,7 +145,7 @@
               <div class="col-sm-3 col-md-6">
                 <a href="windspeed.html">
                   <img
-                    class="card-img-visualization"
+                    class="img-fluid"
                     src="..\Resources\assets\images\Fig4.png"
                     alt="Wind Speed"
                   />
@@ -152,7 +155,6 @@
           </div>
         </div>
       </div>
-    </div>
   </body>
 
   <footer>

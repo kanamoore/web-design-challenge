@@ -32,26 +32,15 @@
 
 .background {
   background-color: #f2f2f2;
+  justify-content: space-evenly;
 }
 
 .card-img-summary {
-  width: 300px;
-  height: 280px;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-left-radius: calc(0.25rem - 1px);
-  padding-left: 1rem;
-  /* float: left;
-  margin-right: 10px;
-  clear: both; */
-}
-
-.card-img-visualization {
-  width: 200px;
-  height: 180px;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-left-radius: calc(0.25rem - 1px);
-  padding-left: 1.5rem;
-}
+  float: left;
+  width: 60%;
+  height: 60%;
+  }
+  
 
 /* p {
   margin-left: 0px;
@@ -59,20 +48,8 @@
   display: block;
 } */
 
-.card-padding-1 {
-  padding: 3rem;
-  padding-top: 3rem;
-  padding-left: 4rem;
-  padding-right: 1rem;
-  padding-bottom: 8rem;
-}
-
-.card-padding-2 {
-  padding: 3rem;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 3rem;
-  padding-bottom: 10rem;
+.card-padding {
+  padding: 2rem 0rem 2rem 2rem;
 }
 
 .data-card-padding {
@@ -108,7 +85,7 @@ footer {
 
 
 @media (max-width: 990px) {
-  .navbar-expand-lg {
+  .navbar-expand-lg { 
     background-color: #0bada6 !important;
   }
 
@@ -130,3 +107,10 @@ footer {
   .navbar-light .navbar-toggler {
     color: #888888;
     border-color: #DDDDDD;
+  }
+
+  .card-padding-2 {
+    padding: 3 0;
+
+  }
+
