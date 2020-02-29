@@ -92,25 +92,7 @@ footer {
   border-top-width: 5px;
 }
 
-.img-max{
-  border-style: solid;
-  border-color: #0bada6;
-  border-width: medium;
-}
-
-.img-cloudiness{
-  border-style: solid;
-  border-color: #0bada6;
-  border-width: medium;
-}
-
-.img-wind{
-  border-style: solid;
-  border-color: #0bada6;
-  border-width: medium;
-}
-
-.img-humidity{
+.img-viz{
   border-style: solid;
   border-color: #0bada6;
   border-width: medium;
