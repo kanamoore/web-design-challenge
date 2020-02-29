@@ -1,3 +1,11 @@
+.description-content {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 5px;
+	color: black;
+	background-color: white;
+}
+
 .narvar-text {
   background-color: white !important;
   padding: 0rem;
@@ -16,7 +24,6 @@
   background-color: #0bada6;
   color: white;
   font-size: 25px;
-  /* margin: 1rem; */
 }
 
 .heading_text {
@@ -40,13 +47,6 @@
   width: 60%;
   height: 60%;
   }
-  
-
-/* p {
-  margin-left: 0px;
-  overflow: auto;
-  display: block;
-} */
 
 .card-padding {
   padding: 2rem 0rem 2rem 2rem;
@@ -63,15 +63,24 @@ h4 {
   color: #0bada6;
   font-family: serif;
   padding: 3rem 1.5rem 0;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 h5 {
   color: #0bada6;
   font-family: serif;
   padding: 3rem 1.5rem 0;
-  font-size: 30px;
+  font-size: 27px;
 }
+
+h6 {
+  color: #0bada6;
+  font-family: serif;
+  padding: 3rem 1.5rem 0;
+  font-size: 25px;
+  text-align: center;
+}
+
 
 footer {
   text-align: center;
@@ -83,7 +92,34 @@ footer {
   border-top-width: 5px;
 }
 
+.img-max{
+  border-style: solid;
+  border-color: #0bada6;
+  border-width: medium;
+}
 
+.img-cloudiness{
+  border-style: solid;
+  border-color: #0bada6;
+  border-width: medium;
+}
+
+.img-wind{
+  border-style: solid;
+  border-color: #0bada6;
+  border-width: medium;
+}
+
+.img-humidity{
+  border-style: solid;
+  border-color: #0bada6;
+  border-width: medium;
+}
+
+.com-img{
+  justify-content: space-evenly;
+
+}
 @media (max-width: 990px) {
   .navbar-expand-lg { 
     background-color: #0bada6 !important;
@@ -91,7 +127,7 @@ footer {
 
   .navbar {
     max-height: none;
-    padding: inherit;
+    padding: inherit;.
   }
   .navbar div {
     margin: inherit;

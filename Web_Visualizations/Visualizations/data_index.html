@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bootstrap Visualization Dataset</title>
+
+    <!-- import js and css style sheet  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -28,63 +30,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+<!-- Create navbar  -->
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
-      <a class="navbar-brand latitude heading_text" href="landing_index.html"
-        ><b>Latitude</b></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon "></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light narvar-text">
+    <a class="navbar-brand latitude heading_text" href="landing_index.html"><b>Latitude</b></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse nav-left" id="navbarNavDropdown">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Plots
+          </a>
+           <div
+             class="dropdown-menu"
+             aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+             <a class="dropdown-item" href="humidity.html">Humidity</a>
+             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+           </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison_index.html"
+            >Comparison <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="data_index.html">Data</a>
+        </li>
+      </ul>
+  </nav>
+    <!-- End of navbar  -->
 
-      <div class="collapse navbar-collapse nav-left" id="navbarNavDropdown">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="max_temp.html"
-                >Max Temperature</a
-              >
-              <a class="dropdown-item" href="humidity.html"
-                >Humidity</a
-              >
-              <a class="dropdown-item" href="cloudiness.html"
-                >Cloudiness</a
-              >
-              <a class="dropdown-item" href="windspeed.html"
-                >Wind Speed</a
-              >
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="comparison_index.html"
-              >Comparison <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="data_index.html">Data</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <!-- Create a table  -->
     <div class="row background">
       <div class="col-md-12 data-card-padding">
         <div class="card">
@@ -6681,10 +6675,12 @@
                   </tbody>
                 </table>
             </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
+
   <footer>
     © Copyright Kana Moore
   </footer>
